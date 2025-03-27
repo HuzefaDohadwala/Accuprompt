@@ -1,86 +1,88 @@
-#welcome-screen {
-    background-image: linear-gradient(to right bottom, #11998e, #00af94, #00c593, #00da8b, #38ef7d);
-    margin: 0;
-    padding: 20px;
-    width: 200px; 
-    height: 200px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: Arial, sans-serif; 
-  }
-  
-  body {
-    margin: 0;
-    padding: 0; 
-  }
-  
-  body::-webkit-scrollbar {
-    display: none; /* Set width of scrollbar */
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  width: 400px;
+}
 
-  h2 {
-    margin: 0;
-    font-size: 1.8em; /* Increased font size */
-    color: white; /* Set font color */
-  }
-  
-  #api-key {
-    margin-top: 20px; /* Adjusted margin for better spacing */
-    padding: 10px; /* Increased padding */
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 80%; /* Adjusted width for better alignment */
-  }
-  
-  button {
-    margin-top: 20px; /* Adjusted margin for better spacing */
-    padding: 10px 20px; /* Increased padding */
-    border-width: 2px;
-    border-radius: 10px;
-    border-color: white;
-    background-color: #00c593;
-    color: white;
-    cursor: pointer;
-    font-family: Arial, sans-serif; /* Set font style */
-    transition: background-color 0.3s ease, transform 0.1s ease; /* Add transition for hover effect */
-  }
-  
-  button:hover {
-    background-color: #00af94; /* Change background color on hover */
-    transform: scale(1.05); /* Slightly increase size on hover */
-  }
-  
-  button:active {
-    transform: scale(0.95); /* Slightly decrease size on click */
-  }
-  
-  #main-screen {
-    background-image: linear-gradient(to right bottom, #11998e, #00af94, #00c593, #00da8b, #38ef7d);
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: Arial, sans-serif; 
-    width: 350px;
-    height: auto; /* Remove fixed height */
-  }
-  
-  #result {
-    margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    text-align: left;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    width: 80%;
-    word-wrap: break-word; 
-    white-space: pre-wrap; 
-  }
-  
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Welcome Screen */
+#welcome-screen {
+  background-image: linear-gradient(135deg, #4568dc, #b06ab3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Main Screen */
+#main-screen {
+  background-image: linear-gradient(135deg, #4568dc, #b06ab3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: white;
+}
+
+#api-key {
+  width: 85%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#api-key:focus {
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: #4568dc;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #f8f8f8;
+}
+
+#generate {
+  margin-bottom: 20px;
+  min-width: 150px;
+}
+
+#result {
+  width: 90%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  min-height: 100px;
+  max-height: 300px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#copy {
+  margin-top: 5px;
+}
